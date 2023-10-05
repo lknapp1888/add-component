@@ -1,6 +1,6 @@
 
 
-export function ItemList({numList}) {
+export function ItemList({numList, deleteNum}) {
     const sum = Object.values(numList).reduce((acc, curr) => acc + curr, 0);
 
     return (
@@ -9,7 +9,7 @@ export function ItemList({numList}) {
                 return (
                     <div key={number[0]} className="listItem">
                         <p>{number[1]}</p>
-                        <button type="button">X</button>
+                        <button type="button" onClick={() => deleteNum(number[0])}>X</button>
                     </div>
                 )
             })}
