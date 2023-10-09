@@ -63,10 +63,6 @@ button {
   transition: border-color 0.25s;
 }
 
-button:hover {
-  border-color: #646cff;
-}
-
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -75,7 +71,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #f2f8ff;
   }
   a:hover {
     color: #747bff;
@@ -83,6 +79,20 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+
+form button {
+  margin: 0px 5px;
+  border: 1px solid grey;
+}
+
+form button:hover {
+  background-color: #53f25b;
+}
+
+button:hover {
+  background-color: #f25353;
 }
 
 /* list styling */
